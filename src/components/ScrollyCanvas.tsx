@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 
-const FRAME_COUNT = 90; // frames from 00 to 89
+const FRAME_COUNT = 75; // frames from 000 to 074
 
 const currentFrame = (index: number) => 
-  `/sequence/frame_${index.toString().padStart(2, '0')}_delay-0.067s.png`;
+  `/sequence/frame_${index.toString().padStart(3, '0')}.png`;
 
 export default function ScrollyCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);

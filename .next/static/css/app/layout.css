@@ -729,6 +729,9 @@ video {
 .h-6 {
   height: 1.5rem;
 }
+.h-\[14mm\] {
+  height: 14mm;
+}
 .h-\[400px\] {
   height: 400px;
 }
@@ -744,14 +747,11 @@ video {
 .h-screen {
   height: 100vh;
 }
-.h-\[14mm\] {
-  height: 14mm;
+.min-h-0 {
+  min-height: 0px;
 }
 .min-h-screen {
   min-height: 100vh;
-}
-.min-h-0 {
-  min-height: 0px;
 }
 .w-5 {
   width: 1.25rem;
@@ -762,14 +762,11 @@ video {
 .w-64 {
   width: 16rem;
 }
-.w-\[10mm\] {
-  width: 10mm;
+.w-\[14mm\] {
+  width: 14mm;
 }
 .w-full {
   width: 100%;
-}
-.w-\[14mm\] {
-  width: 14mm;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -901,9 +898,8 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(18 18 18 / var(--tw-bg-opacity, 1));
 }
-.bg-\[\#f4f4f0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 244 240 / var(--tw-bg-opacity, 1));
+.bg-\[\#f4f4f0\]\/50 {
+  background-color: rgb(244 244 240 / 0.5);
 }
 .bg-black\/40 {
   background-color: rgb(0 0 0 / 0.4);
@@ -925,23 +921,17 @@ video {
 .bg-white\/5 {
   background-color: rgb(255 255 255 / 0.05);
 }
-.bg-\[\#f4f4f0\]\/50 {
-  background-color: rgb(244 244 240 / 0.5);
+.bg-\[linear-gradient\(to_bottom\2c \#000_10mm\2c transparent_10mm\)\] {
+  background-image: linear-gradient(to bottom,#000 10mm,transparent 10mm);
 }
-.bg-\[linear-gradient\(to_bottom\2c transparent_25\%\2c \#000_25\%\2c \#000_75\%\2c transparent_75\%\)\] {
-  background-image: linear-gradient(to bottom,transparent 25%,#000 25%,#000 75%,transparent 75%);
+.bg-\[linear-gradient\(to_right\2c \#000_10mm\2c transparent_10mm\)\] {
+  background-image: linear-gradient(to right,#000 10mm,transparent 10mm);
 }
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-.bg-\[linear-gradient\(to_bottom\2c \#000_10mm\2c transparent_10mm\)\] {
-  background-image: linear-gradient(to bottom,#000 10mm,transparent 10mm);
-}
-.bg-\[linear-gradient\(to_right\2c \#000_10mm\2c transparent_10mm\)\] {
-  background-image: linear-gradient(to right,#000 10mm,transparent 10mm);
 }
 .from-blue-900\/20 {
   --tw-gradient-from: rgb(30 58 138 / 0.2) var(--tw-gradient-from-position);
@@ -975,17 +965,14 @@ video {
 .to-teal-500\/20 {
   --tw-gradient-to: rgb(20 184 166 / 0.2) var(--tw-gradient-to-position);
 }
-.bg-\[length\:100\%_4mm\] {
-  background-size: 100% 4mm;
-}
-.bg-cover {
-  background-size: cover;
-}
 .bg-\[size\:100\%_15mm\] {
   background-size: 100% 15mm;
 }
 .bg-\[size\:15mm_100\%\] {
   background-size: 15mm 100%;
+}
+.bg-cover {
+  background-size: cover;
 }
 .bg-center {
   background-position: center;
@@ -1002,6 +989,10 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .px-3 {
   padding-left: 0.75rem;
@@ -1034,14 +1025,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-.py-\[10mm\] {
-  padding-top: 10mm;
-  padding-bottom: 10mm;
-}
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 .pl-6 {
   padding-left: 1.5rem;
