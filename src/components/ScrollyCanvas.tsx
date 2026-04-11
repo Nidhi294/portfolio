@@ -45,8 +45,8 @@ export default function ScrollyCanvas() {
   }, []);
 
   useEffect(() => {
-    // Draw initial frame once the first image is loaded
-    if (images.length > 0 && canvasRef.current) {
+    // Draw initial frame once all images are ready
+    if (isReady && images.length > 0 && canvasRef.current) {
       const canvas = canvasRef.current;
       const ctx = canvas.getContext('2d');
       if (!ctx) return;
@@ -65,13 +65,11 @@ export default function ScrollyCanvas() {
            centerShift_x, centerShift_y, img.width * ratio, img.height * ratio);  
       };
 
-      if (img.complete) {
+      if (img.complete && img.naturalWidth > 0) {
         drawImage();
-      } else {
-        img.onload = drawImage;
       }
     }
-  }, [images]);
+  }, [isReady, images]);
 
   useMotionValueEvent(frameIndex, 'change', (latest) => {
     if (!canvasRef.current || images.length === 0) return;
