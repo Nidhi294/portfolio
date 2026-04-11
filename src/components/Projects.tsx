@@ -6,7 +6,11 @@ export default function Projects() {
       title: "Content Creator / Video Editor",
       company: "Oppvenuz",
       year: "2025",
-      description: "Created content for social media platforms, integrated AI tools into creative workflows, and managed content strategy.",
+      description: [
+        "Created content for social media platforms and integrated AI tools into creative workflows.",
+        "Managed content strategy, marketing campaigns, and Meta Ads for diverse clients.",
+        "Consecutively awarded 'Best Employee of the Month' for outstanding performance."
+      ],
       color: "from-purple-500/20 to-pink-500/20",
       bgImage: "/oppvenuz_bg.png"
     },
@@ -14,7 +18,10 @@ export default function Projects() {
       title: "Video Editor",
       company: "Prographer & Team Tangulwar",
       year: "2024–2025",
-      description: "Edited ad films, short documentaries, wedding films, and cinematic videos blending authenticity with innovation.",
+      description: [
+        "Edited high-quality ad films, short documentaries, and wedding films.",
+        "Delivered cinematic videos by blending authentic storytelling with innovative editing techniques."
+      ],
       color: "from-cyan-500/20 to-blue-500/20",
       bgImage: "/cinematic_bg.png"
     },
@@ -22,7 +29,10 @@ export default function Projects() {
       title: "Video Editor – Social Media",
       company: "Brainbees Solutions (FirstCry)",
       year: "2022–2023",
-      description: "Collaborated with content, design, and marketing teams to produce high-performing reels with strong engagement.",
+      description: [
+        "Collaborated with content, design, and marketing teams to produce high-performing reels.",
+        "Driven strong audience engagement through data-backed video editing strategies."
+      ],
       color: "from-emerald-500/20 to-teal-500/20",
       bgImage: "/social_bg.png"
     }
@@ -60,9 +70,11 @@ export default function Projects() {
                     <span className="text-xs font-semibold text-white/70 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full">{exp.year}</span>
                   </div>
                   <h4 className="text-2xl font-bold text-white mb-4 drop-shadow-md group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-300 transition-all">{exp.title}</h4>
-                  <p className="text-gray-200 font-light leading-relaxed drop-shadow-sm">
-                    {exp.description}
-                  </p>
+                  <ul className="text-gray-200 text-sm font-light leading-relaxed drop-shadow-sm list-disc pl-4 space-y-2">
+                    {exp.description.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
@@ -190,7 +202,7 @@ export default function Projects() {
             </svg>
           </div>
           <h3 className="text-4xl font-bold text-white mb-2">Let's create</h3>
-          <p className="text-gray-400">Open for opportunities and collaborations.</p>
+          <p className="text-gray-400">Open for full-time, part-time, and freelance opportunities and collaborations.</p>
         </div>
         <div className="flex flex-col gap-4">
           <a href="mailto:gattaninidhi3@gmail.com" className="flex items-center gap-3 text-white/80 hover:text-white transition-colors">
