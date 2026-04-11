@@ -5,9 +5,6 @@ import { useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 
 const FRAME_COUNT = 90; // frames from 000 to 089
 
-const currentFrame = (index: number) => 
-  `/sequence/frame_${index.toString().padStart(3, '0')}.png`;
-
 export default function ScrollyCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -35,9 +32,10 @@ export default function ScrollyCanvas() {
       }
     };
 
-    for (let i = 0; i < FRAME_COUNT; i++) {
+    for (let index = 0; index < FRAME_COUNT; index++) {
+      const filename = `/sequence/frame_${index.toString().padStart(3, '0')}.png`;
       const img = new window.Image();
-      img.src = currentFrame(i);
+      img.src = filename;
       img.onload = handleImageLoad;
       img.onerror = handleImageLoad; // Continue even if one fails
       loadedImages.push(img);
