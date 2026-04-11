@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 
-const FRAME_COUNT = 75; // frames from 000 to 074
+const FRAME_COUNT = 90; // frames from 000 to 089
 
 const currentFrame = (index: number) => 
   `/sequence/frame_${index.toString().padStart(3, '0')}.png`;
