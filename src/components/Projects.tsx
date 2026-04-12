@@ -8,7 +8,7 @@ export default function Projects() {
       year: "2025",
       description: [
         "Created content for social media platforms and integrated AI tools into creative workflows.",
-        "Managed content strategy, marketing campaigns, and Meta Ads for diverse clients.",
+        "Managed content strategy, marketing campaigns, and Meta Ads.",
         "Consecutively awarded 'Best Employee of the Month' for outstanding performance."
       ],
       color: "from-purple-500/20 to-pink-500/20",
@@ -181,25 +181,30 @@ export default function Projects() {
 
       <div className="max-w-7xl mx-auto border-t border-white/10 pt-16 flex flex-col md:flex-row justify-between items-center gap-8">
         <div>
-          <div className="mb-8 relative" style={{ width: '4cm', height: '2cm' }}>
-            <svg 
-              width="100%" 
-              height="100%" 
-              viewBox="0 0 650 150" 
-              preserveAspectRatio="none" 
-              className="overflow-visible"
-              style={{ filter: 'drop-shadow(0px 10px 15px rgba(0,0,0,0.5))' }}
-            >
-              {/* 3D Extrusion Layers (Bottom to Top) - Grayish */}
-              <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight="900" fontStyle="normal" fontSize="140" fill="#111827" transform="translate(25, 20)">NIDHI G</text>
-              <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight="900" fontStyle="normal" fontSize="140" fill="#1f2937" transform="translate(20, 16)">NIDHI G</text>
-              <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight="900" fontStyle="normal" fontSize="140" fill="#374151" transform="translate(15, 12)">NIDHI G</text>
-              <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight="900" fontStyle="normal" fontSize="140" fill="#4b5563" transform="translate(10, 8)">NIDHI G</text>
-              <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight="900" fontStyle="normal" fontSize="140" fill="#6b7280" transform="translate(5, 4)">NIDHI G</text>
+          <div className="mb-8 relative w-full max-w-[450px]">
+            <div className="cinematic-container relative w-full h-[150px] rounded-3xl overflow-hidden flex items-center justify-center border border-white/10 shadow-2xl">
+              <div className="cinematic-particles"></div>
+              <div className="studio-light-left"></div>
+              <div className="studio-light-right"></div>
               
-              {/* Main Text Face - Light Blue */}
-              <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontFamily="Arial, sans-serif" fontWeight="900" fontStyle="normal" fontSize="140" fill="#7dd3fc">NIDHI G</text>
-            </svg>
+              <div className="cinematic-camera-push relative z-10 flex w-full justify-center">
+                <h1 
+                  className="cinematic-text uppercase whitespace-nowrap"
+                  data-text="NIDHI G"
+                  style={{ 
+                    fontFamily: 'var(--font-saira-stencil), sans-serif',
+                    fontSize: '57px',
+                    fontWeight: 600,
+                    fontStyle: 'normal',
+                    fontStretch: 'normal',
+                    lineHeight: 1,
+                    letterSpacing: '0.05em'
+                  }}
+                >
+                  NIDHI G
+                </h1>
+              </div>
+            </div>
           </div>
           <h3 className="text-4xl font-bold text-white mb-2">Let's create</h3>
           <p className="text-gray-400">Open for full-time, part-time, and freelance opportunities and collaborations.</p>
