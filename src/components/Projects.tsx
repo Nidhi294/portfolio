@@ -35,6 +35,18 @@ export default function Projects() {
       ],
       color: "from-emerald-500/20 to-teal-500/20",
       bgImage: "/social_bg.png"
+    },
+    {
+      title: "3D Animator",
+      company: "Xentrix Studios",
+      year: "2020–2021",
+      description: [
+        "Worked on 3D animated CG series like Eureka! (Disney Junior) and Ridley Jones (Netflix).",
+        "Applied skills in 3D Animation, Content Production, and Drawing."
+      ],
+      color: "from-red-500/20 to-orange-500/20",
+      bgImage: "/xentrix_bg.png",
+      link: "https://vimeo.com/680047420"
     }
   ];
 
@@ -75,6 +87,17 @@ export default function Projects() {
                       <li key={i}>{point}</li>
                     ))}
                   </ul>
+                  {exp.link && (
+                    <a 
+                      href={exp.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-white/90 hover:text-white bg-white/10 hover:bg-white/20 backdrop-blur-md px-4 py-2 rounded-full transition-all w-fit border border-white/10 hover:border-white/30"
+                    >
+                      <Link className="w-4 h-4" />
+                      View Animation Work
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
